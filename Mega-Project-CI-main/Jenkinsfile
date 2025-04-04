@@ -28,6 +28,11 @@ pipeline {
                 sh "mvn test"
             }
         }
+          stage('Trivy Scan ') {
+            steps {
+                sh "trivy fs --format table -o fs-report.html ."
+            }
+        }
         
         stage('Sonar Analysis') {
             steps {
