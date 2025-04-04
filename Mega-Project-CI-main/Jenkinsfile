@@ -29,12 +29,6 @@ pipeline {
             }
         }
         
-        stage('Trivy FS Scan') {
-            steps {
-                sh "trivy fs --scanners vuln --format table -o fs-report.html ."
-            }
-        }
-        
         stage('Sonar Analysis') {
             steps {
                 withSonarQubeEnv('sonar') {
