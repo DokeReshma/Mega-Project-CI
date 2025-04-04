@@ -68,7 +68,7 @@
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity6</artifactId>
-             <version>3.1.1</version>    
+             <version>3.1.2</version>    
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -84,6 +84,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>3.3.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
